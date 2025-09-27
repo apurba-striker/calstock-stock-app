@@ -10,9 +10,9 @@ const Header = async ({ user }: { user: User }) => {
     return (
         <header className="sticky top-0 header">
             <div className="container header-wrapper">
-                <Link href="/">
-                    <Image src="../app/favicon.ico" alt="Sacktrading logo" width={140} height={32} className="h-8 w-auto cursor-pointer" />
-                </Link>
+                <Link href="/" className="flex items-center space-x-2">
+          <span className="text-2xl font-bold text-blue-600">Calstock</span>
+        </Link>
                 <nav className="hidden sm:block">
                     <NavItems initialStocks={initialStocks} />
                 </nav>
